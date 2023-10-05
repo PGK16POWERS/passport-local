@@ -22,7 +22,19 @@ mongoose.connect(mongoUri,{
     console.log("Marjella Ke Star")
 }) .catch((error)=> {
     console.error("Error Experienced: ", error)
-})
+});
+
+const Schema = mongoose.Schema;
+
+const userSchema =new Schema({
+    name: String,
+    email: String,
+    password: String,
+});
+
+const userCollection = mongoose.model("Member",userSchema);
+
+
 
 app.get("/",(req,res)=> {
     res.send("Dundiditagain")
