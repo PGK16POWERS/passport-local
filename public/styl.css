@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+a,li {
+    list-style: none;
+    text-decoration: none;
+}
+
 :root {
     --monts: 'Montserrat', sans-serif;
 }
@@ -11,6 +16,9 @@
 body {
     font-family: var(--monts);
     background-color: #f2f1ec;
+}
+
+#form-body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,3 +90,31 @@ label {
 }
 
 /**** LOGIN CARDS *****/
+
+/**** HEADER LINKS ****/
+header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px gainsboro;
+}
+
+.header-links {
+    font-size: 1em;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+/**** HEADER LINKS ****/
