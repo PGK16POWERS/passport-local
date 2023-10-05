@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --monts: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--monts);
+    background-color: #f2f1ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+/**** LOGIN CARDS ****/
+#form , .form-div-parent, .div-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form {
+    width: 350px;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: white;
+    border: 0 solid transparent;
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px rgb(205, 205, 205);
+}
+
+.form-div-parent {
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.div-child {
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.2rem;
+}
+
+label {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: rgb(70, 70, 70);
+}
+
+.div-child input {
+    padding: 8px 10px;
+    width: 100%;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border: 2px solid rgb(239, 239, 239);
+    border-radius: 4px;
+}
+
+.subbtn {
+    padding: 0.6rem 2rem;
+    border: 0 solid transparent;
+    border-radius: 4px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/**** LOGIN CARDS *****/
